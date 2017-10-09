@@ -23,7 +23,7 @@ class SerpentTombOfTyrantsGame(Game, metaclass=Singleton):
     @property
     def screen_regions(self):
         regions = {
-            "SAMPLE_REGION": (0, 0, 0, 0)
+            "TOMB_OF_TYRANTS_LOGO_MENU": (15, 28, 206, 449)
         }
 
         return regions
