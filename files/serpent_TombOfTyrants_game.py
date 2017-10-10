@@ -23,7 +23,11 @@ class SerpentTombOfTyrantsGame(Game, metaclass=Singleton):
     @property
     def screen_regions(self):
         regions = {
-            "TOMB_OF_TYRANTS_LOGO_MENU": (15, 28, 206, 449)
+            "TOMB_OF_TYRANTS_LOGO_MENU": (15, 28, 206, 449),
+            "RESTART_YES": (253, 816, 274, 857),
+            "RESTART_NO": (278, 822, 300, 853),
+
+            "NB_DAYS_STATE_GAME": (16, 30, 76, 89)
         }
 
         return regions
@@ -31,13 +35,13 @@ class SerpentTombOfTyrantsGame(Game, metaclass=Singleton):
     @property
     def ocr_presets(self):
         presets = {
-            "SAMPLE_PRESET": {
+            "MENU": {
                 "extract": {
-                    "gradient_size": 1,
+                    "gradient_size": 10,
                     "closing_size": 1
                 },
                 "perform": {
-                    "scale": 10,
+                    "scale": 5,
                     "order": 1,
                     "horizontal_closing": 1,
                     "vertical_closing": 1
